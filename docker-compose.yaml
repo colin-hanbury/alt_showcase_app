@@ -1,0 +1,18 @@
+services:
+  # Mongodb backend
+  mongo_db:
+    container_name: mongodb_container
+    image: mongo:latest
+    restart: always
+
+  # GoLang server
+  api:
+    build: .
+    ports:
+      - 8080:8080
+    environment:
+      PORT: 8080
+      MONGODB_URI: mongodb://mongo_db:27017
+      DB_NAME: showcase_db
+    depends_on: 
+      - mongo_db
