@@ -2,10 +2,10 @@ package server
 
 import (
 	"log"
-	"showcase-alt/server/src/shared/actions"
-	"showcase-alt/server/src/shared/database"
-	"showcase-alt/server/src/shared/user"
-	"showcase-alt/server/src/shared/welcome"
+	"showcase-alt/server/src/actions"
+	"showcase-alt/server/src/database"
+	"showcase-alt/server/src/user"
+	"showcase-alt/server/src/welcome"
 
 	"github.com/gin-gonic/gin"
 )

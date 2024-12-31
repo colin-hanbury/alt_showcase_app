@@ -4,7 +4,7 @@ import (
 	"context"
 	"log"
 	"net/http"
-	"showcase-alt/server/src/shared/user"
+	"showcase-alt/server/src/user"
 	"time"
 
 	"github.com/gin-gonic/gin"
