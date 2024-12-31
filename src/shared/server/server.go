@@ -10,7 +10,7 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func initialize() {
+func Initialize() {
 
 	client, err := database.ConnectMongoDB()
 	if err != nil {

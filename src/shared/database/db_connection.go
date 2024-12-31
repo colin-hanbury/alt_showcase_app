@@ -9,7 +9,7 @@ import (
 )
 
 func ConnectMongoDB() (*mongo.Client, error) {
-	url := os.Getenv("URL")
+	url := os.Getenv("MONGODB_URI")
 
 	clientOptions := options.Client().ApplyURI(url)
 
